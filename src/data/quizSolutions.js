@@ -64,5 +64,15 @@ solutions.cityMap = function (someMap) {
   return someMap;
 }
 
+solutions.modifiedMap = function (someMap) {
+  if (someMap.has("appy") && !someMap.has("main")) {
+    someMap.set("main", someMap.get("appy"));
+  }
+  else if (!someMap.has("appy") && someMap.has("main")) {
+    someMap.set("appy", someMap.get("main"));
+  }
+  return someMap;
+}
+
 
  module.exports = solutions;
