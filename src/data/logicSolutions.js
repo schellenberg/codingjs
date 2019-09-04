@@ -183,7 +183,7 @@ solutions.cigarParty = function (cigars, isWeekend) {
     return a < b && b < c;
   };
   
-  solutions.lastDigit = function (a, b, c) {
+  solutions.lastDigitOfThree = function (a, b, c) {
     return a % 10 == b % 10 || b % 10 == c % 10 || a % 10 == c;
   };
   
