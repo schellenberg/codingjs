@@ -28,7 +28,21 @@ solutions.countOdds = function (nums) {
          }
      }
      return count;
- }
+}
+
+solutions.lucky39 = function (nums) {
+  for(let i = 0; i < nums.length; i++){
+    if (nums[i] == 3 || nums[i] == 9){
+        return false;
+    }
+  }
+    return true;
+
+}
+
+solutions.rotateRightBy2 = function (nums) {
+  return [nums[2], nums[3], nums[0], nums[1]];
+}
  
 solutions.fib = function (n) {
   if (n < 2) {

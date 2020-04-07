@@ -48,6 +48,39 @@ module.exports = [
     question: `Return the number of odd integers in the given array. Note: the % "mod"
     operator computes the remainder, e.g. 5 % 2 is 1.`
   },
+  {
+    title: 'Quiz',
+    name: 'lucky39',
+    inputs: [
+      "([0, 2, 4])",
+      "([1, 2, 3])",
+      "([1, 2, 9])",
+      "([2, 7, 2, 8])",
+      "([2, 7, 1, 8])",
+      "([9, 7, 2, 8])",
+      "([2, 7, 2, 1])",
+      "([1, 9])",
+      "([2, 2])",
+      "([2])",
+      "([9])",
+      "([])",
+    ],
+    question: `Given an array of ints, return true if the array contains no 3's and no 9's.`
+  },
+  {
+    title: 'Quiz',
+    name: 'rotateRightBy2',
+    inputs: [
+      "([1, 2, 3, 4])",
+      "([6, 7, 8, 9])",
+      "([1, 1, 1, 1])",
+      "([2, 8, 1, 6])",
+      "([0, 7, 0, 0])",
+      "([4, 3, 2, 1])",
+      "([12, 15, 18, 21])",
+    ],
+    question: `Given an array of 4 ints, return an array with the elements "rotated right twice", so {1,2,3,4} yields {3,4,1,2}.`
+  },
   { question: 'The fibonacci sequence is a famous bit of mathematics, and it happens to have a recursive definition. The first two values in the sequence are 0 and 1 (essentially 2 base cases). Each subsequent value is the sum of the previous two values, so the whole sequence is: 0, 1, 1, 2, 3, 5, 8, 13, 21 and so on. Define a recursive fibonacci(n) method that returns the nth fibonacci number, with n=0 representing the start of the sequence.',
     title: 'Quiz',
     name: 'fib',
