@@ -244,4 +244,17 @@ solutions.mapLargest = function (someMap) {
   return largest;
 }
 
+solutions.mapLongestSentence = function (someMap) {
+  let largest = null;
+  for (let [key, value] of someMap) {
+    if (largest === null) {
+      largest = key;
+    }
+    else if (value.split(" ").length > someMap.get(largest).split(" ").length) {
+      largest = key;
+    }
+  }
+  return largest;
+}
+
  module.exports = solutions;

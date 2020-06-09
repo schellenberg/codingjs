@@ -302,4 +302,15 @@ module.exports = [
       '([["a", 0], ["b", -2]])',
       '([["aa", 12], ["a", 11], ["z", 10]])',
   ] },
+  { question: 'The given map has keys paired with a sentence. Iterate through the given map, and return the key that is paired with the sentence with the largest number of words. There will not be a tie for the longest sentence. Hint: You will probably want to use the .split() function.',
+    title: 'Map-2',
+    name: 'mapLongestSentence',
+    inputType: "map",
+    outputType: "string",
+    inputs: [
+      '([["a", "Peanut butter and jelly sandwiches."], ["c", "Once upon a time, something happened."]])',
+      '([["b", "Who knows why he swallowed a fly?"], ["c", "Humpty Dumpty sat on a wall."]])',
+      '([["a", "The stranger officiates the meal."], ["b", "Peanuts don\'t grow on trees, but cashews do."], ["c", "The lake is far from here."]])',
+      '([["aa", "Pat ordered a ghost pepper pie."], ["a", "Nobody likes a cat wearing lipstick."], ["z", "The quick brown fox jumps over the lazy dog."]])',
+  ] },
 ];
