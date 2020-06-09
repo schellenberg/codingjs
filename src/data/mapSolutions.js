@@ -231,4 +231,17 @@ solutions.firstSwap = function (wordArray) {
   return wordArray;
 }
 
+solutions.mapLargest = function (someMap) {
+  let largest = null;
+  for (let [key, value] of someMap) {
+    if (largest === null) {
+      largest = key;
+    }
+    else if (value > someMap.get(largest)) {
+      largest = key;
+    }
+  }
+  return largest;
+}
+
  module.exports = solutions;
