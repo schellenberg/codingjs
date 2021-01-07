@@ -14,9 +14,17 @@ solutions.sumDownBy2 = function (n) {
     }
  }
  
- 
 solutions.makes8 = function (a, b) {
   return ((a == 8 || b == 8) || (a + b == 8));
+};
+
+solutions.mooseEating = function (temp, isSummer) {
+  let upperBound = 20;
+  let lowerBound = -20;
+  if (isSummer) {
+    upperBound = 30;
+  }
+  return temp >= lowerBound && temp <= upperBound;
 };
  
 solutions.countOdds = function (nums) {
