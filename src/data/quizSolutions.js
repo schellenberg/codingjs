@@ -26,6 +26,10 @@ solutions.mooseEating = function (temp, isSummer) {
   }
   return temp >= lowerBound && temp <= upperBound;
 };
+
+solutions.gradeNines = function (hour, coffee) {
+  return !coffee && (hour <= 11 || hour >= 2);
+};
  
 solutions.countOdds = function (nums) {
    let count = 0;
