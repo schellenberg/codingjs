@@ -28,8 +28,18 @@ solutions.mooseEating = function (temp, isSummer) {
 };
 
 solutions.gradeNines = function (hour, coffee) {
-  return !coffee && (hour <= 11 || hour >= 2);
+  return !coffee && (hour <= 11 || hour >= 14);
 };
+
+solutions.fix97 = function (nums) {
+  if (nums[0] === 9 && nums[1] === 7) {
+    nums[1] = 0;
+  }
+  else if (nums[1] === 9 && nums[2] === 7) {
+    nums[2] = 0;
+  }
+  return nums;
+}
  
 solutions.countOdds = function (nums) {
    let count = 0;

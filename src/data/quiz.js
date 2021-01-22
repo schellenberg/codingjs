@@ -52,10 +52,23 @@ module.exports = [
       '(-21, false)',
     ], 
   },
+  {
+    title: 'Quiz',
+    name: 'fix97',
+    inputs: [
+      '([8, 9, 7])',
+      '([9, 7, 5])',
+      '([8, 7, 8])',
+      '([7, 9, 8])',
+      '([9, 9, 7])',
+      '([9, 7, 7])',
+    ],
+    question: `Given an int array length 3, if there is a 9 in the array immediately followed by a 7, set the 7 element to 0. Return the changed array.`,
+  },
   { 
     title: 'Quiz',
     name: 'gradeNines',
-    question: "Grade 9 students can be really loud, which causes a teacher headaches if they haven't had enough coffee. This is particularly bad at the start and end of the school day. The hour parameter is the current hour time in the range 0...23. The coffee parameter is a boolean that states if the teacher has had enough coffee. The grade nine class is in trouble if the teacher hasn't had enough coffee and the hour is before 11 or after 2 (inclusive).",
+    question: "Grade 9 students can be really loud, which causes a teacher headaches if they haven't had enough coffee. This is particularly bad at the start and end of the school day. The hour parameter is the current hour time in the range 0...23. The coffee parameter is a boolean that states if the teacher has had enough coffee. The grade nine class is in trouble if the teacher hasn't had enough coffee and the hour is before 11 or after 14 (inclusive).",
     inputs: [
       '(10, true)',
       '(10, false)',
