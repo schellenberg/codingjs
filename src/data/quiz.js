@@ -65,6 +65,25 @@ module.exports = [
     ],
     question: `Given an int array length 3, if there is a 9 in the array immediately followed by a 7, set the 7 element to 0. Return the changed array.`,
   },
+  {
+    title: 'Quiz',
+    name: 'sum312',
+    inputs: [
+      "([3, 2, 3, 3, 4, 3])",
+      "([3, 2, 3, 3, 4, 3, 3])",
+      "([1, 2, 3, 4])",
+      "([3, 3, 3, 3])",
+      "([1, 3, 3, 3, 3, 4])",
+      "([])",
+      "([3])",
+      "([12])",
+      "([3, 3, 3])",
+      "([3, 3, 3, 3, 3])",
+      "([1, 3, 3, 1, 3, 3])",
+      "([5, 3, 3, 3, 4, 3])",
+    ],
+    question: `Given an array of ints, return true if the sum of all the 3's in the array is exactly 12.`
+  },
   { 
     title: 'Quiz',
     name: 'gradeNines',

@@ -40,7 +40,17 @@ solutions.fix97 = function (nums) {
   }
   return nums;
 }
- 
+
+solutions.sum312 = function (nums) {
+  let theSum = 0;
+  for (let i=0; i<nums.length; i++) {
+    if (nums[i] === 3) {
+      theSum += 12;
+    }
+  }
+  return theSum === 12;
+}
+
 solutions.countOdds = function (nums) {
    let count = 0;
  
