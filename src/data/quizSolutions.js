@@ -45,7 +45,7 @@ solutions.sum312 = function (nums) {
   let theSum = 0;
   for (let i=0; i<nums.length; i++) {
     if (nums[i] === 3) {
-      theSum += 12;
+      theSum += 3;
     }
   }
   return theSum === 12;
