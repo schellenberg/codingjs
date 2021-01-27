@@ -18,6 +18,7 @@ module.exports = [
   { 
     title: 'Quiz',
     name: 'makes8',
+    hideTests: true,
     question: 'Given 2 ints, a and b, return true if one if them is 8 or if their sum is 8.',
     inputs: [
       '(5, 8)',
@@ -35,6 +36,7 @@ module.exports = [
   { 
     title: 'Quiz',
     name: 'mooseEating',
+    hideTests: true,
     question: 'The moose in Waskesiu spend most of the day nibbling leaves and twigs. In particular, they eat if the temperature is between -20 and 20 (inclusive). Unless it is summer, then the upper limit is 30 instead of 20. Given an int temperature and a boolean isSummer, return true if the moose eat, and false otherwise.',
     inputs: [
       '(10, true)',
@@ -55,6 +57,7 @@ module.exports = [
   {
     title: 'Quiz',
     name: 'fix97',
+    hideTests: true,
     inputs: [
       '([8, 9, 7])',
       '([9, 7, 5])',
@@ -68,6 +71,7 @@ module.exports = [
   {
     title: 'Quiz',
     name: 'sum312',
+    hideTests: true,
     inputs: [
       "([3, 2, 3, 3, 4, 3])",
       "([3, 2, 3, 3, 4, 3, 3])",
@@ -87,6 +91,7 @@ module.exports = [
   { 
     title: 'Quiz',
     name: 'gradeNines',
+    hideTests: true,
     question: "Grade 9 students can be really loud, which causes a teacher headaches if they haven't had enough coffee. This is particularly bad at the start and end of the school day. The hour parameter is the current hour time in the range 0...23. The coffee parameter is a boolean that states if the teacher has had enough coffee. The grade nine class is in trouble if the teacher hasn't had enough coffee and the hour is before 11 or after 14 (inclusive).",
     inputs: [
       '(10, true)',
@@ -109,6 +114,7 @@ module.exports = [
   {
     title: 'Quiz',
     name: 'countOdds',
+    hideTests: true,
     inputs: [
       "([2, 1, 2, 3, 4])",
       "([2, 2, 0])",
@@ -125,6 +131,7 @@ module.exports = [
   {
     title: 'Quiz',
     name: 'lucky39',
+    hideTests: true,
     inputs: [
       "([0, 2, 4])",
       "([1, 2, 3])",
@@ -144,6 +151,7 @@ module.exports = [
   {
     title: 'Quiz',
     name: 'rotateRightBy2',
+    hideTests: true,
     inputs: [
       "([1, 2, 3, 4])",
       "([6, 7, 8, 9])",

@@ -9,6 +9,7 @@ let deParam = require("./utility/deParam.js");
 let inputParser = require("./utility/inputParser.js");
 let tableHeader = require("./utility/tableHeader.js");
 let formatResults = require("./utility/formatResults.js");
+let hiddenResults = require("./utility/hiddenResults.js");
 let setInitialEditorContents = require("./utility/setInitialEditorContents.js");
 let displayExampleRuns = require("./utility/displayExampleRuns.js");
 let prettyPrintMap = require("./utility/prettyPrintMap.js");
@@ -102,10 +103,20 @@ $('#solve').on('click', () => {
           let formattedMapIdealResult = prettyPrintMap(idealResult);
           let formattedMapUserResult = prettyPrintMap(result);
 
-          $('#tests').append(formatResults(exerciseName, formattedInput, formattedMapIdealResult, formattedMapUserResult));
+          if (exercise.hideTests === undefined) { // show tests -- hideTests value not set in question
+            $('#tests').append(formatResults(exerciseName, formattedInput, formattedMapIdealResult, formattedMapUserResult));
+          }
+          else {
+            $('#tests').append(hiddenResults(formattedMapIdealResult, formattedMapUserResult));
+          }
         }
         else {
-          $('#tests').append(formatResults(exerciseName, formattedInput, idealResult, result));
+          if (exercise.hideTests === undefined) { // show tests -- hideTests value not set in question
+            $('#tests').append(formatResults(exerciseName, formattedInput, idealResult, result));
+          }
+          else {
+            $('#tests').append(hiddenResults(idealResult, result));
+          }
         }
         
       }
@@ -116,10 +127,20 @@ $('#solve').on('click', () => {
           let formattedMapIdealResult = prettyPrintMap(idealResult);
           let formattedMapUserResult = prettyPrintMap(result);
 
-          $('#tests').append(formatResults(exerciseName, inputStr, formattedMapIdealResult, formattedMapUserResult));
+          if (exercise.hideTests === undefined) { // show tests -- hideTests value not set in question
+            $('#tests').append(formatResults(exerciseName, inputStr, formattedMapIdealResult, formattedMapUserResult));
+          }
+          else {
+            $('#tests').append(hiddenResults(formattedMapIdealResult, formattedMapUserResult));
+          }
         }
         else {
-          $('#tests').append(formatResults(exerciseName, inputStr, idealResult, result));
+          if (exercise.hideTests === undefined) { // show tests -- hideTests value not set in question
+            $('#tests').append(formatResults(exerciseName, inputStr, idealResult, result));
+          }
+          else {
+            $('#tests').append(hiddenResults(idealResult, result));
+          }
         }
       }
 
