@@ -82,7 +82,7 @@ $('#solve').on('click', () => {
   let result;
   try {
     $(".errorMessage").text("");
-    eval(`userCode=${answer}`);
+    eval(`userCode=${answer}`);     //since this is all front end, not a security risk...
     const inputs = exercise.inputs;
 
     let results = [];

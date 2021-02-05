@@ -1,0 +1,27 @@
+module.exports = [
+  { question: 'Given a 2x2 2D array, count how many of the elements are the number 5. Return the result as an integer.',
+    title: '2dArray',
+    name: 'arrayCount2d',
+    inputType: "2dArray",
+    outputType: "int",
+    inputs: [
+      '([[1,2],[3,4],[5,6]])',
+      '([[1,5],[5,9],[5,5]])',
+      '([[2,2],[3,3],[4,4]])',
+      '([[4,4],[5,5],[6,6]])',
+      '([[5,5],[5,5],[5,5]])',
+  ] },
+  { question: 'Given a 2D array (might not be rectangular), count how many of the elements are the number 5. Return the result as an integer.',
+    title: '2dArray',
+    name: 'arrayCount2d2',
+    inputType: "2dArray",
+    outputType: "int",
+    inputs: [
+      '([[1],[2,3],[4,5,6]])',
+      '([[1,5,6],[5,5,9],[5,5,7]])',
+      '([[1],[2],[3],[4]])',
+      '([[],[],[],[]])',
+      '([[5,5,5],[5],[5,5]])',
+      '([[4,5,6],[7,6,5],[5,7,9]])',
+  ] },
+];

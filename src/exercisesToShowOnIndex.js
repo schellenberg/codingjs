@@ -6,10 +6,11 @@ let logicExercises =require("./data/logic.js");
 let arrayExcercies = require("./data/array.js");
 let apExcercises = require("./data/ap.js");
 let mapExercises = require("./data/map.js");
+let array2dExercises = require("./data/2darray.js");
 
 let mainPageExercises = [...warmupExercises, ...stringExercises,
-                         ...logicExercises, ...arrayExcercies,
-                         ...recursionExercises, ...apExcercises,
-                        ...mapExercises];
+                         ...logicExercises, ...arrayExcercies, 
+                         ...array2dExercises, ...recursionExercises, 
+                         ...apExcercises, ...mapExercises];
 
 module.exports = mainPageExercises;
