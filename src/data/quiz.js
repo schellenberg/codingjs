@@ -183,6 +183,7 @@ module.exports = [
   { question: 'Given an array of favourite authors last names, create a map such that each author last name becomes a key in the map, and the value of the key is the number of times the author was named in the array.',
     title: 'Quiz',
     name: 'authorMap',
+    hideTests: true,
     inputType: "array",
     outputType: "map",
     inputs: [
@@ -196,6 +197,7 @@ module.exports = [
   { question: 'Given a map of city keys and activity values, modify and return the map as follows: if the key "saskatoon" has a value, set that as the value for the key "regina" and get rid of the "saskatoon" key. If the key "moose jaw" has a value, set that as the value for the key "yorkton" and get rid of the "moose jaw" key.',
     title: 'Quiz',
     name: 'cityMap',
+    hideTests: true,
     inputType: "map",
     outputType: "map",
     inputs: [
