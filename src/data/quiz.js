@@ -225,4 +225,17 @@ module.exports = [
     '([["main", "steak"], ["drink", "iced tea"]])',
     '([["appy", ""], ["main", ""]])',
   ] },
+  { question: 'Given a 2D array (might not be rectangular), count how many of the elements are the number 7. Return the result as an integer.',
+    title: 'Quiz',
+    name: 'count7in2d',
+    inputType: "2dArray",
+    outputType: "int",
+    inputs: [
+      '([[1],[2,3,4],[5,6,7]])',
+      '([[1,7,6],[5,7,9],[7,5,7]])',
+      '([[9],[8],[7],[6]])',
+      '([[],[],[],[]])',
+      '([[7,7,7],[7],[7,7]])',
+      '([[4,5,6],[7,6,5],[5,7,9]])',
+  ] },
 ];

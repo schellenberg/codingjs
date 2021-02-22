@@ -120,5 +120,17 @@ solutions.modifiedMap = function (someMap) {
   return someMap;
 }
 
+solutions.count7in2d = function (someArray) {
+  let counter = 0;
+  for (let i=0; i<someArray.length; i++) {
+    for (let j=0; j<someArray[i].length; j++) {
+      if (someArray[i][j] === 7) {
+        counter++;
+      }
+    }
+  }
+  return counter;
+}
+
 
  module.exports = solutions;
