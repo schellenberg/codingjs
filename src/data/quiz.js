@@ -1,5 +1,5 @@
 module.exports = [
-  { question: 'Given an integer, n, return the sum of the positive integers n + (n-2) + (n-4) + ...    Note: Your solution must be recursive. In other words, there can be no for or while loops in your solution.',
+  { question: 'Given an integer, n, return the sum of the positive integers n + (n-2) + (n-4) + ...    Note: Your solution must be recursive. In other words, there can be no for or while loops in your solution. Hint: if the integer is negative, what would the sum of the positive integers be?',
     title: 'Quiz',
     name: 'sumDownBy2',
     inputs: [
