@@ -70,6 +70,26 @@ module.exports = [
   },
   {
     title: 'Quiz',
+    name: 'lucky42',
+    hideTests: true,
+    inputs: [
+      "([0, 1])",
+      "([0, 2, 4])",
+      "([1, 3, 5, 7, 9])",
+      "([2, 4, 2, 2])",
+      "([4, 7, 1, 8])",
+      "([3, 7, 2, 8])",
+      "([3, 7, 3, 1])",
+      "([4, 5])",
+      "([3, 3])",
+      "([2])",
+      "([3])",
+      "([])",
+    ],
+    question: `Given an array of ints, return true if the array contains no 2's and no 4's.`
+  },
+  {
+    title: 'Quiz',
     name: 'sum312',
     hideTests: true,
     inputs: [

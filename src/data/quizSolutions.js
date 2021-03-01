@@ -132,5 +132,14 @@ solutions.count7in2d = function (someArray) {
   return counter;
 }
 
+solutions.lucky42 = function (nums) {
+  for(let i = 0; i < nums.length; i++){
+    if (nums[i] == 4 || nums[i] == 2){
+        return false;
+    }
+  }
+    return true;
+}
+
 
  module.exports = solutions;
