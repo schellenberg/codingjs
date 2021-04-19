@@ -387,7 +387,15 @@ solutions.stringYak = function (str) {
 };
 
 solutions.has271 = function (nums) {
-  return !!(nums.join('').match(/271/g));
+  for (let i=0; i<nums.length-2;i++) {
+    let start = nums[i];
+    let second = nums[i+1] === start + 5;
+    let third = Math.abs(nums[i+2] - (start-1)) <= 2;
+    if (second && third) {
+      return true;
+    }
+  }
+  return false;
 };
 
 solutions.countXX = function (str) {
